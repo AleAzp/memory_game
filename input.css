@@ -2,7 +2,125 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-  .card {
-  }
+
+body{
+  background-color: #D0FFF6;
+}
+
+span {
+  font-weight: bold;
+}
+
+#grid{
+  margin-bottom: 50px;
+}
+
+.tarjeta{
+  background-image: url("img/card_2.png");
+  background-size: cover;
+  background-color: gray;
+  border-radius: 8px;
+  width: 120px;
+  height: 120px;
+  
+}
+
+.tarjeta.flipped.pair-1{
+  background-image: url("https://images.pexels.com/photos/28273165/pexels-photo-28273165.jpeg?auto=compress&cs=tinysrgb&w=300");
+  background-color: blueviolet;
+  filter: drop-shadow(2px 2px 2px #390960);
+}
+
+.tarjeta.flipped.pair-2{
+  background-image: url("https://images.pexels.com/photos/27939370/pexels-photo-27939370/free-photo-of-retrato-de-perro-rescatado.jpeg?auto=compress&cs=tinysrgb&w=300");
+  background-color: rgb(43, 179, 1);
+  filter: drop-shadow(2px 2px 2px #390960);
+}
+
+.tarjeta.flipped.pair-3{
+  background-image: url("https://images.pexels.com/photos/16524650/pexels-photo-16524650/free-photo-of-perro-mascota-retrato-perrito.jpeg?auto=compress&cs=tinysrgb&w=300");
+  background-color: rgb(1, 224, 253);
+  filter: drop-shadow(2px 2px 2px #390960);
+}
+
+.tarjeta.flipped.pair-4{
+  background-image: url("https://images.pexels.com/photos/20080179/pexels-photo-20080179/free-photo-of-perro-mascota-cabeza-fondo-de-pantalla.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-color: rgb(255, 153, 0);
+  filter: drop-shadow(2px 2px 2px #390960);
+}
+
+.tarjeta.flipped.pair-5{
+  background-image: url("https://images.pexels.com/photos/1981627/pexels-photo-1981627.jpeg?auto=compress&cs=tinysrgb&w=300");
+  background-color: rgb(255, 0, 0);
+  filter: drop-shadow(2px 2px 2px #390960);
+}
+
+.tarjeta.flipped.pair-6{
+  background-image: url("https://images.pexels.com/photos/27818807/pexels-photo-27818807/free-photo-of-perro-mascota-mono-sentado.jpeg?auto=compress&cs=tinysrgb&w=300");
+  background-color: rgb(0, 53, 26);
+  filter: drop-shadow(2px 2px 2px #390960);
+}
+
+.tarjeta.flipped.pair-7{
+  background-image: url("https://images.pexels.com/photos/7483192/pexels-photo-7483192.jpeg?auto=compress&cs=tinysrgb&w=300");
+  background-color: rgb(144, 117, 150);
+  filter: drop-shadow(2px 2px 2px #390960);
+}
+
+.tarjeta.flipped.pair-8{
+  background-image: url("https://images.pexels.com/photos/803766/pexels-photo-803766.jpeg?auto=compress&cs=tinysrgb&w=300");
+  background-color: rgb(0, 26, 255);
+  filter: drop-shadow(2px 2px 2px #390960);
+}
+
+.tarjeta.flipped.pair-9{
+  background-image: url("https://images.pexels.com/photos/15094407/pexels-photo-15094407/free-photo-of-animal-perro-mascota-mono.jpeg?auto=compress&cs=tinysrgb&w=300");
+  background-color: rgb(0, 255, 200);
+  filter: drop-shadow(2px 2px 2px #390960);
+}
+
+.tarjeta.flipped.pair-10{
+  background-image: url("https://images.pexels.com/photos/20504095/pexels-photo-20504095/free-photo-of-primer-plano-de-un-lindo-perrito.jpeg?auto=compress&cs=tinysrgb&w=300");
+  background-color: rgb(247, 175, 175);
+  filter: drop-shadow(2px 2px 2px #390960);
+}
+
+.pop-up {
+  display: none; /*oculto por defecto*/
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-contenido {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%;
+  border-radius: 5px;
+}
+
+.cerrar {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.cerrar:hover{
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#winnerImg{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
 }
