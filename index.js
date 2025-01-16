@@ -108,7 +108,6 @@ function flipCard(index) {// flips a card by id
 
 // comparo el pairNumber de mis dos cartas seleccionadas
 function checkMatched(cardArr) {
-  
   if(pairFlipped[0]!==pairFlipped[1]){ 
     console.log ("son distintas")
     pareja.textContent = '¡Sigue intentando!'
